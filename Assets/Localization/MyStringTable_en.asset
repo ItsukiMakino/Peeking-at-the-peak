@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MyStringTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: dad4e92e651f5534cbb62b9c0b2c8749, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 6441787936952320
+    m_Localized: Language
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441912893657088
+    m_Localized: Resolution
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441916626587648
+    m_Localized: Full Screen
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441919877173248
+    m_Localized: Display Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442124001366016
+    m_Localized: Target Frame
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442182386077696
+    m_Localized: Clear Counts
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442318797426688
+    m_Localized: Best Time
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442365350006784
+    m_Localized: Apply
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442399214817280
+    m_Localized: Quit Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442431322214400
+    m_Localized: Restart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442462100017152
+    m_Localized: Close
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442574532530176
+    m_Localized: SE Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442603657777152
+    m_Localized: BGM Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442647442116608
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442715872186368
+    m_Localized: System
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442737355411456
+    m_Localized: Sound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442761720123392
+    m_Localized: Config
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442831383318528
+    m_Localized: License
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442968541253632
+    m_Localized: Rotation Sensitivity
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443092667486208
+    m_Localized: Jump
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443130521079808
+    m_Localized: Upper Body Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443219415158784
+    m_Localized: Lower Body Control
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443314604888064
+    m_Localized: Right
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443349551828992
+    m_Localized: Left
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6447536985559040
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6447605591789568
+    m_Localized: Setting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7248308786647040
+    m_Localized: Restore default settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7248291602583552
+    m_Localized: Waiting for key input...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14502298251382784
+    m_Localized: CLEAR!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14502848888000512
+    m_Localized: Clear Time
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
