@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MyStringTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MyStringTable
+  m_TableCollectionNameGuidString: dad4e92e651f5534cbb62b9c0b2c8749
+  m_Entries:
+  - m_Id: 6441787936952320
+    m_Key: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441912893657088
+    m_Key: RESOLUTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441916626587648
+    m_Key: FULLSCREEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6441919877173248
+    m_Key: SHOWTIME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442124001366016
+    m_Key: TARGET_FRAME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442182386077696
+    m_Key: CLEAR_COUNT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442318797426688
+    m_Key: BEST_TIME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442365350006784
+    m_Key: APPLY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442399214817280
+    m_Key: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442431322214400
+    m_Key: RESTART
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442462100017152
+    m_Key: CLOSE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442574532530176
+    m_Key: SE_VOLUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442603657777152
+    m_Key: BGM_VOLUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442647442116608
+    m_Key: MASTER_VOLUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442715872186368
+    m_Key: SYSTEM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442737355411456
+    m_Key: SOUND
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442761720123392
+    m_Key: CONFIG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442831383318528
+    m_Key: CREDIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6442968541253632
+    m_Key: SENSTIVITY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443092667486208
+    m_Key: JUMP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443130521079808
+    m_Key: UPPER_BODY_CONTROL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443219415158784
+    m_Key: LOWER_BODY_CONTROL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443314604888064
+    m_Key: RIGHT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6443349551828992
+    m_Key: LEFT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6447536985559040
+    m_Key: PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6447605591789568
+    m_Key: SETTING
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7248291602583552
+    m_Key: WAIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7248308786647040
+    m_Key: DEFAULT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14502298251382784
+    m_Key: CLEAR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14502848888000512
+    m_Key: CLEAR_TIME
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 5099272244138868857
+  references:
+    version: 2
+    RefIds:
+    - rid: 5099272244138868857
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1699084481009
