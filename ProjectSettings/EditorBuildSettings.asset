@@ -6,31 +6,31 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Title.unity
+    path: Assets/PeekingAtThePeak/Scenes/Title.unity
     guid: cd39135ab7960c24aad1c1804fd4b393
   - enabled: 1
-    path: Assets/Scenes/Base.unity
+    path: Assets/PeekingAtThePeak/Scenes/Base.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Stage1.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage1.unity
     guid: ca11fd1ff4d1dd748a74f09eedf00fb9
   - enabled: 1
-    path: Assets/Scenes/Stage2.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage2.unity
     guid: cbc7e82633ea981478b3996cbf61f420
   - enabled: 1
-    path: Assets/Scenes/Stage3.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage3.unity
     guid: 7b7ad02768989364ba9998ee08889360
   - enabled: 1
-    path: Assets/Scenes/Stage4.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage4.unity
     guid: 1665abb7b88962d4f9a33559fabee906
   - enabled: 1
-    path: Assets/Scenes/Stage5.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage5.unity
     guid: 81671273a726a1143bb0db7272b9198e
   - enabled: 1
-    path: Assets/Scenes/Stage6.unity
+    path: Assets/PeekingAtThePeak/Scenes/Stage6.unity
     guid: eb8fbbe4845190441bb872f875b2797f
   - enabled: 1
-    path: Assets/Scenes/Initialize.unity
+    path: Assets/PeekingAtThePeak/Scenes/Initialize.unity
     guid: fcbff660313f2de45b18f000b6e7e59e
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 19583b79f7e047649a5e586cacd1e05d, type: 2}
