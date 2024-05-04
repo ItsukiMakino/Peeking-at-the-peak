@@ -4,7 +4,7 @@ using UnityEditor;
 [CustomEditor(typeof(Transform))]
 public class ColliderVisualizer : Editor
 {
-    private void OnSceneGUI()
+     void OnSceneGUI()
     {
         // シーン内のすべての2Dコライダーを取得
         Collider2D[] colliders = FindObjectsOfType<Collider2D>();
@@ -15,7 +15,7 @@ public class ColliderVisualizer : Editor
         }
     }
 
-    private void DrawCollider2D(Collider2D collider)
+     void DrawCollider2D(Collider2D collider)
     {
         if (collider == null)
             return;
@@ -29,10 +29,10 @@ public class ColliderVisualizer : Editor
         {
             DrawCircleCollider2D((CircleCollider2D)collider);
         }
-        // 他の2Dコライダータイプについても同様に処理を追加できます
+      
     }
 
-    private void DrawBoxCollider2D(BoxCollider2D collider)
+     void DrawBoxCollider2D(BoxCollider2D collider)
     {
         Handles.color = Color.green;
         Vector3 center = collider.transform.TransformPoint(collider.offset);
@@ -42,7 +42,7 @@ public class ColliderVisualizer : Editor
         Handles.DrawWireCube(center, scaledSize);
     }
 
-    private void DrawCircleCollider2D(CircleCollider2D collider)
+     void DrawCircleCollider2D(CircleCollider2D collider)
     {
         Handles.color = Color.blue;
         Vector3 center = collider.transform.TransformPoint(collider.offset);
