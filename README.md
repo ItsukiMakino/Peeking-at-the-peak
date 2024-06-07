@@ -1,6 +1,7 @@
 # Peeking at the peak
 
-ソースコードはこちらから見られます[Assets/PeekingAtThePeak/Scrips](https://github.com/ItsukiMakino/Peeking-at-the-peak/tree/main/Assets/PeekingAtThePeak/Scripts)
+ソースコードはこちらから見られます[Assets/PeekingAtThePeak/Scrips](https://github.com/ItsukiMakino/Peeking-at-the-peak/tree/main/Assets/PeekingAtThePeak/Scripts)  
+キャラクターの挙動などを定義しているファイルはこちら[PlayerBehaiviour.cs](https://github.com/ItsukiMakino/Peeking-at-the-peak/blob/main/Assets/PeekingAtThePeak/Scripts/Runtime/Common/Player/PlayerBehaiviour.cs)
 
 ## 操作方法
 
@@ -22,6 +23,7 @@ Shit を押したり、Ctrl を押しながらジャンプすることで、通�
 
 ## 開発環境,使用したツール
 
+- windows11
 - Unity2022.3.1f1
 - URP
 - Blender
