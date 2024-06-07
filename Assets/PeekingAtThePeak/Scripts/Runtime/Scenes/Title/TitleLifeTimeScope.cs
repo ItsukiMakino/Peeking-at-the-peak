@@ -21,9 +21,9 @@ namespace MyGame
             builder.RegisterInstance(_pageContainer);
             builder.RegisterComponent(title_ViewComponet);
             builder.Register<Title_Model>(Lifetime.Singleton);
-            // builder.Register<LoadUISystem>(Lifetime.Singleton);
-            // builder.Register<Pages_Model>(Lifetime.Singleton);
-            // builder.Register<PlayerInput>(Lifetime.Singleton);
+            builder.Register<LoadUISystem>(Lifetime.Singleton);
+            builder.Register<Pages_Model>(Lifetime.Singleton);
+            builder.Register<PlayerInput>(Lifetime.Singleton);
             if (ConfigMaskPrefab != null)
                 builder.RegisterInstance(ConfigMaskPrefab);
         }

@@ -26,6 +26,7 @@ namespace MyGame
 
         private bool isColliding = false;
         private MaterialPropertyBlock mpb;
+
         CancellationToken token;
         void Start()
         {
@@ -33,10 +34,7 @@ namespace MyGame
             mpb = new MaterialPropertyBlock();
             targetMaterial = RenderSettings.skybox;
             TopStartColor = targetMaterial.GetColor(ZString.Concat("_Top"));
-            BottomStartColor = targetMaterial.GetColor(ZString.Concat("_Bottom"));
-
-
-
+            BottomStartColor = targetMaterial.GetColor(ZString.Concat("_Bottom"));         
 
         }
         void OnTriggerEnter2D(Collider2D other)
@@ -45,8 +43,7 @@ namespace MyGame
             lerpTime = 0.0f;
             TopBeginColor = targetMaterial.GetColor(ZString.Concat("_Top"));
             BottomBeginColor = targetMaterial.GetColor(ZString.Concat("_Bottom"));
-            SoundSystem.Instance.PlayBGM(BGMid, token, PlayImmidiate).Forget();
-
+            SoundSystem.Instance.PlayBGM(BGMid, token, PlayImmidiate).Forget();         
 
         }
 
@@ -62,16 +59,12 @@ namespace MyGame
             {
                 lerpTime += Time.deltaTime;
                 float t = Mathf.Clamp01(lerpTime / lerpDuration);
-
-
                 Color TopLerpedColor = Color.Lerp(TopBeginColor, TopTargetColor, t);
                 Color BottomLerpedColor = Color.Lerp(BottomBeginColor, BottomTargetColor, t);
+
                 // マテリアルのカラープロパティを変更
                 targetMaterial.SetColor(ZString.Concat("_Top"), TopLerpedColor);
                 targetMaterial.SetColor(ZString.Concat("_Bottom"), BottomLerpedColor);
-
-
-
             }
 
         }

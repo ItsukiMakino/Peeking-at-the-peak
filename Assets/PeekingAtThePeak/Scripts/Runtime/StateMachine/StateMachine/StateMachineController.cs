@@ -59,12 +59,14 @@ namespace MyGame.StateMachine
             if (IsPressOnlySpace())
             {
                 playerSBM.ChangeState(playerSBM.jumpState).Forget();
+                return ;
             }
             if (IsPressCtrAndSpace())
             {
                 if (playerSBM.CurrentState == playerSBM.jumpState)
                 {
                     playerSBM.ChangeState(playerSBM.jumpToCrouch).Forget();
+                    return;
                 }
                 playerSBM.ChangeState(playerSBM.crouchState).Forget();
             }
@@ -73,12 +75,14 @@ namespace MyGame.StateMachine
                 if (playerSBM.CurrentState == playerSBM.jumpState)
                 {
                     playerSBM.ChangeState(playerSBM.jumpToStrech).Forget();
+                    return ;
                 }
                 playerSBM.ChangeState(playerSBM.strechState).Forget();
             }
             if (IsNotPressJump())
             {
                 playerSBM.ChangeState(playerSBM.idle).Forget();
+                return;
             }
 
 

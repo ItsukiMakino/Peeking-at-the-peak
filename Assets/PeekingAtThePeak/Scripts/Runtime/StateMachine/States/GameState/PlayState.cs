@@ -17,7 +17,9 @@ namespace MyGame.StateMachine
         }
         public async UniTask Start(CancellationToken ct)
         {
-            await UniTask.WaitWhile(() => PB is null, cancellationToken: ct);
+            Debug.Log("playState Enter");
+
+            await UniTask.WaitWhile(() => PB == null || SaveSystem.loadData == null, cancellationToken: ct) ;
             playerInput.MyAction.Player.Enable();
 
 
@@ -41,6 +43,7 @@ namespace MyGame.StateMachine
         }
         public UniTask Update(CancellationToken ct)
         {
+            if (SaveSystem.loadData == null) return UniTask.CompletedTask;
             if (!SaveSystem.loadData.IsTimeStop)
             {
                 PB.ElapsedTime += Time.deltaTime;

@@ -83,8 +83,8 @@ Material:
     - _SunSizeConvergence: 5
     - _height: 1
     m_Colors:
-    - _Bottom: {r: 0.61071324, g: 0.54197586, b: 0.48141688, a: 1}
+    - _Bottom: {r: 0.17974262, g: 0.1214845, b: 0.24528301, a: 1}
     - _GroundColor: {r: 0.369, g: 0.349, b: 0.341, a: 1}
     - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _Top: {r: 0.46218985, g: 0.39075148, b: 0.9359589, a: 1}
+    - _Top: {r: 0.25364897, g: 0.7467868, b: 0.9433962, a: 1}
   m_BuildTextureStacks: []

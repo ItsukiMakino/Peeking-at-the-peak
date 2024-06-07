@@ -47,7 +47,7 @@ namespace MyGame
         }
         public static async UniTask<PlayerData> LoadAsync(string filePath, CancellationToken ct = default)
         {
-            if (File.Exists(filePath) is not true)
+            if (File.Exists(filePath) != true)
             {
                 print("fileNotExist");
                 return new PlayerData();
@@ -69,7 +69,6 @@ namespace MyGame
             {
                 using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
                     await MemoryPackSerializer.SerializeAsync(stream, data, cancellationToken: ct);
-
                 return true;
             }
             catch (IOException) { }
@@ -78,11 +77,7 @@ namespace MyGame
 
             return false;
         }
-        public void OnApplicationQuit()
-        {
-
-
-        }
+       
 
     }
 }

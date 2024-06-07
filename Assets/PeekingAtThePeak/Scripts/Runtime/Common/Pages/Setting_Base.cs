@@ -39,7 +39,7 @@ namespace MyGame
         protected PageContainer pageContainer;
 
         [Inject]
-        public void Construct(LoadUISystem loadUiSystem, GameStateMachine gameStateMachine)
+        public void Construct(LoadUISystem loadUiSystem)
         {
 
             this.loadUiSystem = loadUiSystem;

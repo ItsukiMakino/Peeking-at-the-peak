@@ -2344,8 +2344,8 @@ GameObject:
   - component: {fileID: 726261715}
   - component: {fileID: 726261714}
   m_Layer: 8
-  m_Name: SkyBoxChenger
-  m_TagString: Untagged
+  m_Name: SkyBoxChengerGoal
+  m_TagString: Gravity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2358,7 +2358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726261712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.1, y: 297.6, z: 0.3499446}
+  m_LocalPosition: {x: 60.5, y: 298.3, z: 0.3499446}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2397,7 +2397,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -19.896698, y: -8.355057}
+  m_Offset: {x: -15.374393, y: -8.523285}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2408,7 +2408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 39.29384, y: 20.768341}
+  m_Size: {x: 44.20655, y: 15.1710205}
   m_EdgeRadius: 0
 --- !u!114 &726261715
 MonoBehaviour:
@@ -4701,15 +4701,23 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -8.540887, y: 42.083435}
-      - {x: -18.063011, y: 57.462296}
-      - {x: -23.30973, y: 79.66968}
-      - {x: -35.200436, y: 85.795166}
-      - {x: -44.845627, y: 82.501236}
+    - - {x: -7.2761135, y: 28.997452}
+      - {x: -8.136556, y: 42.326035}
+      - {x: -17.004557, y: 55.679626}
+      - {x: -18.556341, y: 68.17317}
+      - {x: -23.92252, y: 81.00668}
+      - {x: -29.456333, y: 84.393845}
+      - {x: -35.81322, y: 86.90933}
+      - {x: -42.83723, y: 85.290665}
+      - {x: -48.3657, y: 77.647934}
       - {x: -58.219036, y: 49.112885}
       - {x: -60.946003, y: 6.9053764}
-      - {x: -28.895922, y: 6.125248}
-      - {x: -9.699202, y: 6.2034645}
+      - {x: -55.965866, y: -14.859665}
+      - {x: -35.37705, y: -12.54895}
+      - {x: -26.024708, y: -10.994415}
+      - {x: -18.302048, y: -8.937042}
+      - {x: -12.592907, y: -6.5387077}
+      - {x: -8.728784, y: 10.909992}
       - {x: -8.72313, y: 14.453213}
   m_UseDelaunayMesh: 0
 --- !u!1001 &1481466112
@@ -5481,11 +5489,23 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 1.4073002, y: 0.18729174}
+    - - {x: 1.6567068, y: 0.26076418}
+      - {x: 1.3363192, y: 0.2494452}
+      - {x: 1.223951, y: 0.21051082}
+      - {x: 0.87285626, y: 0.2476983}
       - {x: -1.865676, y: 0.22826385}
       - {x: -1.8960291, y: -0.27235916}
-      - {x: 1.8410406, y: -0.19952923}
-      - {x: 1.8693339, y: 0.17168516}
+      - {x: -0.12646534, y: -0.23690134}
+      - {x: 0.37040728, y: -0.2583658}
+      - {x: 0.6592992, y: -0.28181058}
+      - {x: 0.8423383, y: -0.24470352}
+      - {x: 1.0284452, y: -0.26292324}
+      - {x: 1.2074841, y: -0.22546913}
+      - {x: 1.3597823, y: -0.25984776}
+      - {x: 1.5289996, y: -0.19807483}
+      - {x: 1.6862289, y: -0.2586624}
+      - {x: 1.857504, y: -0.1695674}
+      - {x: 1.89003, y: 0.21222565}
   m_UseDelaunayMesh: 0
 --- !u!1001 &1771639824
 PrefabInstance:

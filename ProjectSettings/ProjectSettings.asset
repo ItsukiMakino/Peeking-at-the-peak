@@ -133,7 +133,7 @@ PlayerSettings:
   vulkanEnableLateAcquireNextImage: 0
   vulkanEnableCommandBufferRecycling: 1
   loadStoreDebugModeEnabled: 0
-  bundleVersion: 0.1
+  bundleVersion: 0.2
   preloadedAssets:
   - {fileID: 11400000, guid: daf28dee749bf414286609f9c87549ad, type: 2}
   - {fileID: 11400000, guid: 5ed73a81ab5ffa448a372f92a4406aa6, type: 2}
@@ -156,6 +156,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.ItskeyGames.PeekingAtThePeak
     Standalone: com.ItskeyGames.PeekingAtThePeak
   buildNumber:
     Standalone: 0
@@ -872,7 +873,7 @@ PlayerSettings:
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
-    Standalone: 0
+    Standalone: 1
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:

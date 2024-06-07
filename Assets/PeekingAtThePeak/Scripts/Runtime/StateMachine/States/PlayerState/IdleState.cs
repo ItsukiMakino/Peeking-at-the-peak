@@ -26,7 +26,7 @@ namespace MyGame.StateMachine
             }
             if (PB.IsGool)
             {
-                PB.Jump(PB.JumpVector, 4.0f);
+                PB.Jump(PB.JumpVector, PB.BigJumpHeight);
 
             }
             return UniTask.CompletedTask;

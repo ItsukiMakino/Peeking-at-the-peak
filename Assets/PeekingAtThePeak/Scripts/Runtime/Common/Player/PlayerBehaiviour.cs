@@ -19,10 +19,12 @@ namespace MyGame
         [SerializeField] Transform player;
         [SerializeField] Rigidbody2D rb2D;
         [SerializeField] float jumpHight;
+        [SerializeField] float bigJumpHight;
 
         [Inject] PlayerInput playerinput;
         int layerMask;
         Vector3 jumpVector;
+        int rotaionVector;
         ReactiveProperty<bool> isRightTouchOther = new ReactiveProperty<bool>();
         ReactiveProperty<bool> isLeftTouchOther = new ReactiveProperty<bool>();
         ReactiveProperty<bool> isRightTouchIron = new ReactiveProperty<bool>();
@@ -49,13 +51,15 @@ namespace MyGame
         public bool IsInversed => isInversed;
         public bool IsGrounded => isGrounded;
         public Vector3 JumpVector => jumpVector;
+        public int RotaionVector => rotaionVector;
+        public float BigJumpHeight => bigJumpHight;
         public Animator HumanAnimator { get => humanAnimator; set => humanAnimator = value; }
         public Animator MeronTopAnimator { get => meronTopAnimator; set => meronTopAnimator = value; }
         public Rigidbody2D Rigidbody2D { get => rb2D; set => rb2D = value; }
 
         const string iron = "Iron";
         const string rock = "Rock";
-        const string other = "Aother";
+        const string other = "Other";
         int speed = Animator.StringToHash("Speed");
         int idle = Animator.StringToHash("Idle");
         int jump = Animator.StringToHash("Jump");
@@ -86,7 +90,7 @@ namespace MyGame
         void Start()
         {
             // 初期化処理
-            layerMask = LayerMask.GetMask("Iron", "Rock", "other");
+            layerMask = LayerMask.GetMask("Iron", "Rock", "Other");
             humanAnimator?.SetFloat(speed, 0);
             meronTopAnimator?.SetFloat(speed, 0);
 
@@ -222,7 +226,8 @@ namespace MyGame
                 if (!isLeftSticking)
                 {
                     //メロンの左枝が地面に接触していない場合は回転する
-                    float newRotation = rb2D.rotation + 1 * CurrentRotationSpeed * Time.deltaTime;
+                    rotaionVector = 1;
+                    float newRotation = rb2D.rotation + rotaionVector * CurrentRotationSpeed * Time.deltaTime;
                     rb2D.MoveRotation(newRotation);
                 }
                 else if (isTreeTouching || isLeftSticking)
@@ -235,7 +240,8 @@ namespace MyGame
             {
                 if (!isRightSticking)
                 {
-                    float newRotation = rb2D.rotation + (-1) * CurrentRotationSpeed * Time.deltaTime;
+                    rotaionVector = -1;
+                    float newRotation = rb2D.rotation + rotaionVector * CurrentRotationSpeed * Time.deltaTime;
                     rb2D.MoveRotation(newRotation);
                 }
                 else if (isTreeTouching || isRightSticking)

@@ -23,6 +23,8 @@ namespace MyGame
         bool isLoaded;
         bool shouldLoad;
         CancellationToken token;
+
+        string tagName = "Player";
         void Awake()
         {
             token = this.GetCancellationTokenOnDestroy();
@@ -74,7 +76,7 @@ namespace MyGame
         }
         void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag(ZString.Concat("Player")))
+            if (other.CompareTag(tagName))
             {
                 shouldLoad = true;
 
@@ -82,7 +84,7 @@ namespace MyGame
         }
         void OnTriggerExit2D(Collider2D other)
         {
-            if (other.CompareTag(ZString.Concat("Player")))
+            if (other.CompareTag(tagName))
             {
                 shouldLoad = false;
 
@@ -93,8 +95,11 @@ namespace MyGame
             if (!isLoaded)
             {
                 isLoaded = true;
-
-                await SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
+                try
+                {
+                    await SceneManager.LoadSceneAsync(gameObject.name, LoadSceneMode.Additive);
+                }
+                catch(System.Exception e) { }
             }
         }
         async UniTask UnLoadScene(CancellationToken token)
@@ -102,10 +107,14 @@ namespace MyGame
             if (isLoaded)
             {
                 isLoaded = false;
-                await SceneManager.UnloadSceneAsync(gameObject.name);
+                try
+                {
+                    await SceneManager.UnloadSceneAsync(gameObject.name );                    
+                }
+                catch(System.Exception ex) 
+                {
 
-
-
+                }
             }
         }
 

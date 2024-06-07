@@ -12,11 +12,13 @@ namespace MyGame
         [Inject]
         GameStateMachine gameStateMachine;
 
+        string tagName = "Player";
         void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag(ZString.Concat("Player")))
+            if (other.CompareTag(tagName))
             {
                 gameStateMachine.ChangeState(gameStateMachine.poseState).Forget();
+                
             }
         }
     }
